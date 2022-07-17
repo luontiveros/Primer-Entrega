@@ -30,11 +30,21 @@ function puntual() {
     return resultado3 
 }
 
-function evaluacion(resultado1*resultado2*resultado3*100) {
-    if (evaluacion < 90) {alert("el proveedor debe ser suspendido")}
-    else if (evaluacion > 95) {alert("el proveedor es condicional")}
-    else if (evaluacion < 95) {alert("el proveedor esta aprobado")}
-}
+function evaluacion(resultado1, resultado2, resultado3) {
+
+    let  resultadoEvaluacion= resultado1*resultado2*resultado3*100
+
+    if (resultadoEvaluacion < 90) {alert("el proveedor debe ser suspendido")}
+
+    else if (resultadoEvaluacion > 95) {alert("el proveedor es condicional")}
+
+    else if (resultadoEvaluacion < 95) {alert("el proveedor esta aprobado")}
+    
+    return resultadoEvaluacion
+  }
+let evaluacionProveedor = prompt("Ingresa el nombre del proveedor para conocer su ultima evaluacion");
+alert("el resultado es: " + resultadoEvaluacion)  
+
 
 
 
